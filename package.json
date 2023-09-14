@@ -1,0 +1,11 @@
+{
+    "name": "less-basic-template",
+    "version": "1.0.0",
+    "description": "Your Less project description",
+    "keywords": [
+        "less"
+    ],
+    "dependencies": {
+        "@faker-js/faker": "^8.0.2"
+    }
+}
