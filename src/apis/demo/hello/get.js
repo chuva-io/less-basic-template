@@ -1,13 +1,14 @@
-const { route } = require('@chuva.io/less');
 const { create_hello } = require('helpers');
 
 module.exports = {
-  get: route(async (request, response) => {
-    const { name } = request.params;
+  process: async (request, response) => {
+    // Get query param.
+    const { name } = request.query;
     const message = create_hello(name);
     
+    // Prepare response
     response.statusCode = 200;
     response.body = message;
     return response;
-  }, [])
+  }
 }
